@@ -7,21 +7,6 @@
   min-height: 100vh;
 }
 
-.starsContainer{
-  position: absolute;
-  top: 0;
-  left: 0;
-  --size:2px;
-  --space-layer: 4vw 50vh 0 #fff,
-  8vw 88vh 0 #fff;
-  width: var(--size);
-  height: var(--size);
-  background-color: #fff;
-  box-shadow: var(--space-layer);
-  opacity: 0.25;
-  z-index: 6;
-}
-
 .sistemaSolar{
   display: flex;
   justify-content: center;

@@ -1,6 +1,7 @@
 "use client";
 import styles from "./page.module.css";
 import stylesPlanet from "./planetas.module.css";
+import stylesStars from "./stars.module.css"
 import React, { useEffect, useState } from "react";
 export default function Home() {
 
@@ -12,7 +13,8 @@ export default function Home() {
     for(let i = 0; i < totalStars; i++) {
       const x = Math.floor(Math.random() * 100);
       const y = Math.floor(Math.random() * 100);
-      layer.push(`${x}vw ${y}vh 0 white` );
+      const opacity = Math.random();
+      layer.push(`${x}vw ${y}vh 0 rgba(255, 255, 255, ${opacity})` ); 
     }
     setStarsStyle({
       '--space-layer': layer.join(','),
@@ -24,7 +26,7 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <div className={styles.starsContainer} style= {starsStyle}></div>
+      <div className={stylesStars.starsContainer} style= {starsStyle}></div>
       <div className={styles.center}>
       
       {/*sistema solar*/}
