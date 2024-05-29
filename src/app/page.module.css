@@ -1,10 +1,25 @@
 .main {
-  display: flex;
+  display: fixed;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+}
+
+.starsContainer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  --size:2px;
+  --space-layer: 4vw 50vh 0 #fff,
+  8vw 88vh 0 #fff;
+  width: var(--size);
+  height: var(--size);
+  background-color: #fff;
+  box-shadow: var(--space-layer);
+  opacity: 0.25;
+  z-index: 6;
 }
 
 .sistemaSolar{
@@ -83,104 +98,7 @@
 .orbita6{ width: 85%;  height: 70%;  }
 .orbita7{ width: 95%;  height: 75%;  }
 */
-@keyframes rotate {
-  0% {
-    transform: translate(150px,0) rotate(0deg);
-  }
-  100% {
-    transform: translate(150px,0) rotate(360deg);
-  }
-}
 
-/*@keyframes rotate2 {
-  from  {
-    transform: rotate(0deg) translate3d(150px, 5px, 0) rotate(0deg) scaleX(1) scaleY(1)  rotateY(0deg);
-  }
-  to {
-    transform: rotate(360deg) translate3d(150px, 5px, 0) rotate(360deg) scaleX(1) scaleY(1)  rotateY(240deg);
-  }
-}
-*/
-@keyframes rotate2 {
-  from  {
-    transform: rotate(0deg) translate3d(20px, 240px, 0) rotate(0deg) scaleX(1) scaleY(0.5)  rotateY(0deg);
-  }
-  to {
-    transform: rotate(360deg) translate3d(20px, 240px, 0) rotate(360deg) scaleX(1) scaleY(0.5)  rotateY(240deg);
-  }
-}
-
-.planeta {
-  position: absolute;
-  
-  top: 50%;
-  left: 97%;
-  width: 20px;  
-  height: 20px;
-  border-radius: 50%;
-  z-index: 1;
-  background-color: #D19861;
-  background-size: cover;
-  background-repeat:no-repeat ;
-  
-  /*animation-name: rotate;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  transform: 50% 50%;*/
-}
-
-.planeta1 {
-  left: 97%;
-  width: 22px;  
-  height: 47px;
-  background-image: url('https://img.freepik.com/fotos-premium/venus-superficie-textura-fondo-ia-generativa_889432-556.jpg') !important;
-  
-}
-.planeta2 {
-  left: 97%;
-  width: 25px;  
-  height: 50px;
-  background-image: url('https://thumbs.dreamstime.com/b/textura-de-la-tierra-del-planeta-14313107.jpg') !important;
-  animation: rotate2 5s  infinite;
-  
-  /*animation-name: rotate2;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: cubic-bezier(0.445, 0.05, 0.50, 0.20);*/
-  z-index: 3  ;
-}
-
-.planeta3 {
-  left: 98%;
-  width: 20px;  
-  height: 45px;
-  background-image: url('https://img.freepik.com/foto-gratis/detalles-naranjas-concepto-textura-lunar_23-2149535802.jpg') !important;
- }
-.planeta4 {
-  left: 95%;
-  width: 50px;  
-  height: 90px;
-  background-image: url('https://preview.free3d.com/img/2015/05/2145886254972011962/teiin5wu.jpg') !important;
-}
- .planeta5 {
-  left: 97%;
-  width: 45px;  
-  height: 80px;
-  background-image: url('https://www.solarsystemscope.com/textures/download/8k_saturn.jpg') !important;
-}
-.planeta6 {
-  left: 97%;
-  width: 40px;  
-  height: 70px;
-  background-image: url('https://static.vecteezy.com/system/resources/previews/001/998/851/original/abstract-background-of-uranus-surface-free-vector.jpg') !important;
-}
-.planeta7 {
-  left: 98%;
-  width: 40px;  
-  height: 70px;
-  background-image: url('https://static.vecteezy.com/system/resources/previews/002/097/266/original/abstract-background-of-neptune-surface-free-vector.jpg') !important;
-}
 
 .description a {
   display: flex;

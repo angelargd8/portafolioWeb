@@ -1,0 +1,130 @@
+
+@keyframes rotate {
+    from  {
+      transform: rotate(0deg) translate3d(20px, 200px, 0) rotate(0deg) scaleX(1) scaleY(0.5)  rotateY(0deg);
+    }
+    to {
+      transform: rotate(360deg) translate3d(20px, 200px, 0) rotate(360deg) scaleX(1) scaleY(0.5)  rotateY(240deg);
+    }
+  }
+  @keyframes rotate1 {
+    from  {
+      transform: rotate(0deg) translate3d(20px, 220px, 0) rotate(0deg) scaleX(1) scaleY(0.5)  rotateY(0deg);
+    }
+    to {
+      transform: rotate(360deg) translate3d(20px, 220px, 0) rotate(360deg) scaleX(1) scaleY(0.5)  rotateY(240deg);
+    }
+  }
+  @keyframes rotate2 {
+    from  {
+      transform: rotate(0deg) translate3d(20px, 240px, 0) rotate(0deg) scaleX(1) scaleY(0.5)  rotateY(0deg);
+    }
+    to {
+      transform: rotate(360deg) translate3d(20px, 240px, 0) rotate(360deg) scaleX(1) scaleY(0.5)  rotateY(240deg);
+    }
+  }
+  @keyframes rotate3 {
+    from  {
+      transform: rotate(0deg) translate3d(20px, 260px, 0) rotate(0deg) scaleX(1) scaleY(0.5)  rotateY(0deg);
+    }
+    to {
+      transform: rotate(360deg) translate3d(20px, 260px, 0) rotate(360deg) scaleX(1) scaleY(0.5)  rotateY(240deg);
+    }
+  }
+  @keyframes rotate4 {
+    from  {
+      transform: rotate(0deg) translate3d(20px, 280px, 0) rotate(0deg) scaleX(1) scaleY(0.5)  rotateY(0deg);
+    }
+    to {
+      transform: rotate(360deg) translate3d(20px, 280px, 0) rotate(360deg) scaleX(1) scaleY(0.5)  rotateY(240deg);
+    }
+  }
+  @keyframes rotate5 {
+    from  {
+      transform: rotate(0deg) translate3d(20px, 300px, 0) rotate(0deg) scaleX(1) scaleY(0.5)  rotateY(0deg);
+    }
+    to {
+      transform: rotate(360deg) translate3d(20px, 300px, 0) rotate(360deg) scaleX(1) scaleY(0.5)  rotateY(240deg);
+    }
+  }
+  @keyframes rotate6 {
+    from  {
+      transform: rotate(0deg) translate3d(20px, 320px, 0) rotate(0deg) scaleX(1) scaleY(0.5)  rotateY(0deg);
+    }
+    to {
+      transform: rotate(360deg) translate3d(20px, 320px, 0) rotate(360deg) scaleX(1) scaleY(0.5)  rotateY(240deg);
+    }
+  }
+  @keyframes rotate7 {
+    from  {
+      transform: rotate(0deg) translate3d(20px, 350px, 0) rotate(0deg) scaleX(1) scaleY(0.5)  rotateY(0deg);
+    }
+    to {
+      transform: rotate(360deg) translate3d(20px, 350px, 0) rotate(360deg) scaleX(1) scaleY(0.5)  rotateY(240deg);
+    }
+  }
+  
+  .planeta {
+    position: absolute;
+    top: 50%;
+    left: 97%;
+    width: 20px;  
+    height: 20px;
+    border-radius: 50%;
+    z-index: 1;
+    background-color: radial-gradient(circle at 50% 50%, #D19861, #000000);;
+    background-size: cover;
+    background-repeat:no-repeat ;
+    animation: rotate 2s  infinite;
+  }
+  
+  .planeta1 {
+    left: 97%;
+    width: 22px;  
+    height: 47px;
+    background-image: url('https://img.freepik.com/fotos-premium/venus-superficie-textura-fondo-ia-generativa_889432-556.jpg') !important;
+    animation: rotate1 5s  infinite;
+  }
+  .planeta2 {
+    left: 97%;
+    width: 25px;  
+    height: 50px;
+    background-image: url('https://thumbs.dreamstime.com/b/textura-de-la-tierra-del-planeta-14313107.jpg') !important;
+    animation: rotate2 8s  infinite;
+  }
+  
+  .planeta3 {
+    left: 98%;
+    width: 20px;  
+    height: 45px;
+    background-image: url('https://img.freepik.com/foto-gratis/detalles-naranjas-concepto-textura-lunar_23-2149535802.jpg') !important;
+    animation: rotate3 11s  infinite;
+   }
+  .planeta4 {
+    left: 95%;
+    width: 50px;  
+    height: 90px;
+    background-image: url('https://preview.free3d.com/img/2015/05/2145886254972011962/teiin5wu.jpg') !important;
+    animation: rotate4 14s  infinite;
+  }
+   .planeta5 {
+    left: 97%;
+    width: 45px;  
+    height: 80px;
+    background-image: url('https://www.solarsystemscope.com/textures/download/8k_saturn.jpg') !important;
+    animation: rotate5 16s  infinite;
+  }
+  .planeta6 {
+    left: 97%;
+    width: 40px;  
+    height: 70px;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/001/998/851/original/abstract-background-of-uranus-surface-free-vector.jpg') !important;
+    animation: rotate6 19s  infinite;
+  }
+  .planeta7 {
+    left: 98%;
+    width: 40px;  
+    height: 70px;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/002/097/266/original/abstract-background-of-neptune-surface-free-vector.jpg') !important;
+    animation: rotate7 22s  infinite;
+  }
