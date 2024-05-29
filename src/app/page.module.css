@@ -7,26 +7,60 @@
   min-height: 100vh;
 }
 
-.sol{
-  border-radius: 50%;
-  height: 150px;
-  width: 150px;
-  transform-style: preserve-3d;
+.sistemaSolar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 4rem 0;
 
-  animation: rotate 10s linear infinite;
+}
+
+.soles{
+  display: absolute;
+}
+.solContainer{
+  top: -20%;
+  position: absolute;
+  max-height: 90px;
+  overflow: hidden;
+  max-width: 180px;
+
+}
+.solTop{
+  position: relative;
+  top: -20%;
+  border-radius: 50% ;
+  height: 180px;
+  width: 180px;
+  transform-style: preserve-3d;
   background-color: #fbff05;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: 0 0 60px rgba(255, 160, 60, 0.4);
+  box-shadow: inset 0 0 60px rgba(255, 161, 60, 0.534);
+  overflow: hidden;
+  z-index: 5;
+}
+
+.solBottom{
+  position: absolute;
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  transform-style: preserve-3d;
+  background-color: #fbff05;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 60px rgba(255, 161, 60, 0.5), 0 0 60px rgba(255, 160, 60, 0.4);
+  overflow: hidden;
   z-index: 0;
 }
+
 
 .orbita{
   position: fixed ;
   justify-content: center;
   align-items: center;
-  width: 20%;
-  height: 40%;
   border-radius: 50%;
   transform-style: preserve-3d;
   animation-name: orbit;
@@ -34,31 +68,58 @@
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 5px solid rgba(255, 255, 255, 0.2);
+  transform: rotateX(60deg);
   z-index: 1;
 }
 
-/*.orbita0{ width: 300px;  height: 300px; background-color: rgb(255, 0, 0);}
-.orbita1{ width: 400px;  height: 400px; }
-.orbita2{ width: 500px;  height: 500px; }
-.orbita3{ width: 600px;  height: 600px; }
-.orbita4{ width: 700px;  height: 700px; }
-.orbita5{ width: 800px;  height: 800px; }
-.orbita6{ width: 900px;  height: 900px; }
-.orbita7{ width: 1000px;  height: 1000px; }
-*/
+.orbita8{ width: 30%; height: 40%;}
+.orbita1{ width: 35%;  height: 45%;}
+.orbita2{ width: 45%;  height: 50%; }
+.orbita3{ width: 55%;  height: 55%; }
+.orbita4{ width: 65%;  height: 60%; }
+.orbita5{ width: 75%;  height: 65%;  }
+.orbita6{ width: 85%;  height: 70%;  }
+.orbita7{ width: 95%;  height: 75%;  }
+
+@keyframes orbit {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
 
 
-.orbita .orbita {
-  animation-name: suborbita; }
 
-@keyframes orbita {
-  0% {
-    transform: rotateZ(0deg); }
+.planeta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;  
+  height: 20px;
+  border-radius: 50%;
+  
+}
 
-  100% {
-    transform: rotateZ(-360deg); } }
 
+.planeta1 {
+  top: 10%; 
+  left: 50%; 
+  background-color: aqua;
+}
+.planeta2 {
+  top: 20%; 
+  left: 50%; 
+  background-color: #fff;
+}
+
+.planeta3 {
+  top: 30%; 
+  left: 50%;
+  background-color: #fff;
+ }
 
 
 .description a {
@@ -115,6 +176,7 @@
   max-width: 30ch;
   text-wrap: balance;
 }
+
 
 .center {
   display: flex;
@@ -178,7 +240,7 @@
     position: fixed ;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 40%;
     height: 40%;
     border-radius: 50%;
     transform-style: preserve-3d;
