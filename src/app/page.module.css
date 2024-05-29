@@ -96,30 +96,31 @@
 .planeta {
   position: absolute;
   top: 50%;
-  left: 50%;
-  width: 20px;  
-  height: 20px;
+  left: 95%;
+  width: 30px;  
+  height: 50px;
   border-radius: 50%;
-  
-}
-
-
-.planeta1 {
-  top: 10%; 
-  left: 50%; 
+  z-index: 1;
   background-color: aqua;
 }
-.planeta2 {
+
+
+/*.planeta0 {
+  top: 10%; 
+  left: 30%; 
+  background-color: aqua;
+}
+.planeta1 {
   top: 20%; 
   left: 50%; 
   background-color: #fff;
 }
 
-.planeta3 {
+.planeta2 {
   top: 30%; 
   left: 50%;
   background-color: #fff;
- }
+ }*/
 
 
 .description a {

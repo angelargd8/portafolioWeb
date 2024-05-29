@@ -19,12 +19,14 @@ export default function Home() {
           {
             Array.from({ length: 8 }).map((_, i) => (
               <div className={`${styles.orbita} ${styles[`orbita${i + 1}`]}`}>
-                {/*planetas*/}
+                {/*planetas<div className={styles.planeta}></div>
+                <div className={`${styles.planeta} ${styles[`planeta${i + 1}`]}`}></div>*/}
                 <div className={`${styles.planeta} ${styles[`planeta${i + 1}`]}`}></div>
               </div>
               
             ))
           }
+          
         
       </div>
         
