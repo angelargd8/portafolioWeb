@@ -1,45 +1,36 @@
 
 .bubbleContainer {
-  background-color: rgb(241, 25, 25);
   min-height: 100%;
   position: relative;
   z-index: 5;
+  width: 100vw;
+  height: 100vh;
 
 }
-.bubble {
+
+@keyframes blink {
+  0% {opacity: 1;}
+  50% {opacity: 0.5;}
+  100% {opacity: 1;}
+}
+
+@keyframes moveStars {
+  0% {transform: translate(0, 0) scale(1);}
+  50% {transform: translate(1vw, 1vh) scale(1.5) ;}
+  100% { transform: translate(0, 0) scale(1);}
+}
+
+.starsContainer{
+  position: absolute;
   top: 0;
   left: 0;
-  position: absolute;
-  border-radius: 50%;
+  --size:1px;
+  width: var(--size);
+  height: var(--size);
+  background-color: currentColor;
+  box-shadow: var(--space-layer);
+  opacity: 0.40;
+  z-index: -1;
+  animation: blink 1s infinite, moveStars 10s infinite;
 }
 
-.container {
-  position: relative;
-  width: 100%;
-  min-height: 100%;
-  transform-style: preserve-3d;
-  background: transparent;
-  
-}
-.bubbleWrap {
-  margin: 0 auto;
-  width: 500px;
-  height: 500px;
-  transform-style: preserve-3d;
-  transform-origin: center center;
-  perspective: 600px;
-  background: transparent;
-}
-
-
-@for $i from 1 through 100 {
-  .bubble:nth-child(#{$i}){
-      $size: random(30)+px;
-      height: $size;
-      width: $size;
-      animation-delay: -$i * .2s;
-      transform: translate3d( (random(1000) * 1px),  (random(1000) * 1px), (random(2000) * 1px));
-      background: hsl( random(360) , 70%, 50%);
-  }
-  
-}
