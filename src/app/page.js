@@ -1,11 +1,24 @@
-"use client";
+"use client"; //esto esta porque me daba error
+import Image from "next/image";
 import styles from "./page.module.css";
 import stylesPlanet from "./planetas.module.css";
 import stylesStars from "./stars.module.css"
+import About from "../../pages/aboutme"
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import SplashScreen from "../../pages/splashscreen"
 export default function Home() {
 
   const [starsStyle, setStarsStyle] = useState({});
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000); 
+
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     const layer = [];
@@ -25,7 +38,14 @@ export default function Home() {
   }, [])
 
   return (
+    loading ? <SplashScreen /> :
     <main className={styles.main}>
+      <div className="void"> {/* honestament eno pense que dejara poner "" en el className, pero bueno*/}
+            <h1 className={styles.title}>¡Bienvenido</h1>
+            <h1 className={styles.title}>a mi portafolio!</h1>
+            <div className={styles.imgContainer}>
+            </div>
+        </div>
       <div className={stylesStars.starsContainer} style= {starsStyle}></div>
       <div className={styles.center}>
       
@@ -54,9 +74,25 @@ export default function Home() {
             }
 
           </div>
-            
-      </div>
+      
+      {/*<div className="voidClickMe">  
+        <button className={styles.clickMe}>
+        Click me
+        
+        </button>
+      </div>*/}
+         
 
+            
+      </div>{/* fin fe sistema solar */}
+      {/* icono para redigirise */}
+      <div >
+      <Link href="/aboutme">
+        <button className={styles.botonFlecha}>
+        </button>
+      </Link>
+      </div>
+      
 
       </div>
     </main>

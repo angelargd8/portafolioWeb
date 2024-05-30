@@ -23,6 +23,6 @@
     box-shadow: var(--space-layer);
     opacity: 0.40;
     z-index: -1;
-    animation: blink 1s infinite, moveStars 5s infinite;
+    animation: blink 1s infinite, moveStars 10s infinite;
   }
 
