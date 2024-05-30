@@ -1,0 +1,72 @@
+@keyframes rotate {
+    from  {
+      transform: rotate(0deg) translate3d(20px, 100px, 0) rotate(0deg) scaleX(1) scaleY(1)  rotateY(0deg);
+    }
+    to {
+      transform: rotate(360deg) translate3d(20px, 100px, 0) rotate(360deg) scaleX(1) scaleY(1)  rotateY(240deg);
+    }
+  }
+.lenguaje {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    width: 30px;  
+    height: 30px;
+    z-index: 1;
+    background-size: cover;
+    background-repeat:no-repeat ;
+    animation: rotate 10s  infinite;
+  }
+
+  .lenguaje {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    width: 30px;  
+    height: 30px;
+    z-index: 1;
+    /*background-color: tomato;radial-gradient(circle at 50% 50%, #D19861, #000000);*/
+    background-size: cover;
+    background-repeat:no-repeat ;
+    animation: rotate 10s  infinite;
+  }
+
+  .lenguaje1 {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/935px-Python-logo-notext.svg.png') !important;
+    animation: rotate 5s  infinite;
+  }
+  .lenguaje2 {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png') !important;
+    animation: rotate 6s  infinite;
+  }
+  .lenguaje3 {
+    height: 40px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCUaDjGczuu5b038vjXDstYNwIUtEc7rS3Fw&s') !important;
+    animation: rotate 7s  infinite;
+  }
+  .lenguaje4 {
+    width: 40px;  
+    background-image: url('https://seeklogo.com/images/E/elephpant-mascot-php-logo-4C78D1AC4E-seeklogo.com.png?v=638245916460000000') !important;
+    animation: rotate 8s  infinite;
+  }
+  .lenguaje5 {
+    background-image: url('https://i.pinimg.com/originals/79/c5/1d/79c51d0e3a3f60b504da6bcc20ab1afc.jpg') !important;
+    animation: rotate 9s  infinite;
+  }
+  .lenguaje6 {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/919/919826.png') !important;
+    animation: rotate 10s  infinite;
+  }
+  .lenguaje7 {
+    background-image: url('https://images.credly.com/images/1c2c86e1-16ce-4e4d-a425-d1ac96bb026d/express.png') !important;
+    animation: rotate 11s  infinite;
+  }
+  .lenguaje8 {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1985px-Postgresql_elephant.svg.png') !important;
+    animation: rotate 12s  infinite;
+  }
+  .lenguaje9 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF9UXfrx8TWM7eyKB1jdIk66ZoGVmTtqWjKQ&s') !important;
+    animation: rotate 13s  infinite;
+  }
+  

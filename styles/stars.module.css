@@ -1,0 +1,28 @@
+@keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+@keyframes moveStars {
+    0% {transform: translate(0, 0);}
+    50% {transform: translate(1vw, 1vh);}
+    100% { ransform: translate(0, 0);}
+}
+
+.starsContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    --size:1px;
+    --space-layer: 4vw 50vh 0 #fff,
+    8vw 88vh 0 #fff;
+    width: var(--size);
+    height: var(--size);
+    background-color: #fff;
+    box-shadow: var(--space-layer);
+    opacity: 0.40;
+    z-index: -1;
+    animation: blink 1s infinite, moveStars 10s infinite;
+  }
+

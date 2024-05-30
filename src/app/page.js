@@ -1,5 +1,4 @@
 "use client"; //esto esta porque me daba error
-import Image from "next/image";
 import styles from "./page.module.css";
 import stylesPlanet from "./planetas.module.css";
 import stylesStars from "./stars.module.css"
@@ -67,7 +66,7 @@ export default function Home() {
             }     
             {/*planetas*/}   
             {
-              Array.from({ length: 9 }).map((_, i) => (
+              Array.from({ length: 15 }).map((_, i) => (
                   <div className={`${stylesPlanet.planeta} ${stylesPlanet[`planeta${i + 1}`]}`}></div>
 
               ))

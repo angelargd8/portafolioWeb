@@ -5,6 +5,7 @@
   z-index: 5;
   width: 100vw;
   height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
@@ -32,5 +33,6 @@
   opacity: 0.40;
   z-index: -1;
   animation: blink 1s infinite, moveStars 10s infinite;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
