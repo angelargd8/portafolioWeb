@@ -10,6 +10,7 @@ import Link from "next/link";
 import stylesLenguajes from "../styles/lenguajes.module.css"
 import Info from "./info"
 import Projects from "./projects"
+import Skills from "./skills"
 
 
 function AboutMe() {
@@ -164,17 +165,7 @@ function AboutMe() {
                           </p>
                       </button>
                   </a>
-                  <a href="http://uwu-guate.site:3412/" target="_blank" rel="noopener noreferrer">
-                      <button className={styles.card}>
-                          <h2>
-                          chat en vivo
-                          </h2>
-                          <p>
-                            chat en vivo con comunicacion
-                            a una api
-                          </p>
-                      </button>
-                  </a>
+                  
                   <a href="https://labb8.vercel.app/" target="_blank" rel="noopener noreferrer">
                       <button className={styles.card}>
                           <h2>
@@ -184,6 +175,17 @@ function AboutMe() {
                             calculadora con tests
                             - vitest
                             - jsdom
+                          </p>
+                      </button>
+                  </a>
+                  <a href="http://uwu-guate.site:3412/" target="_blank" rel="noopener noreferrer">
+                      <button className={styles.card}>
+                          <h2>
+                          chat en vivo
+                          </h2>
+                          <p>
+                            chat en vivo con comunicacion
+                            a una api
                           </p>
                       </button>
                   </a>
@@ -203,7 +205,7 @@ function AboutMe() {
 
           </div>
           <div id="#skills">
-            <Info/>
+            <Skills/>
           </div>
           <div id="#contact">
             <Info/>

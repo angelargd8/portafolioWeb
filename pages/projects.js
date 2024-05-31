@@ -3,9 +3,6 @@ import '../src/app/globals.css'
 import styles from "../styles/projects.module.css"
 import Image from "next/image";
 
-import imagen1 from "../public/assets/a6.jpg"
-import imagen2 from "../public/assets/a7.jpg"
-
 
 function Projects(){
     const [starsStyle, setStarsStyle] = useState({});
