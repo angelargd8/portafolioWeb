@@ -16,6 +16,31 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.ContenedorContactos{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: -15%;
+    margin-bottom: 30%;
+}
+
+.ImagenContacto{
+    margin: 5%;
+    margin-top: -2%;
+    margin-bottom: 10%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+
+.ImagenContacto:hover{
+    box-shadow: 0 0 20px 0 rgba(12, 15, 187, 0.788);
+}
+
+
+
+
 .MainInfo{
     display: flex;
     position: relative;

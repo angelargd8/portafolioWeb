@@ -1,4 +1,4 @@
-"use client"; //esto esta porque me daba error
+"use client"; 
 import '../src/app/globals.css'
 import Image from "next/image";
 import styles from "../styles/aboutme.module.css";
@@ -11,6 +11,10 @@ import stylesLenguajes from "../styles/lenguajes.module.css"
 import Info from "./info"
 import Projects from "./projects"
 import Skills from "./skills"
+import Contact from "./contact"
+import linkedin from "../public/assets/linkedin.png"
+import github from "../public/assets/github.png"
+
 
 
 function AboutMe() {
@@ -124,9 +128,8 @@ function AboutMe() {
             </a>
 
             <a
-              href="contact"
+              href="#contact"
               className={styles.card}
-
             >
               <h2>
                 Contact <span>-&gt;</span>
@@ -208,7 +211,31 @@ function AboutMe() {
             <Skills/>
           </div>
           <div id="#contact">
-            <Info/>
+            <Contact/>
+            <div className={styles.ContenedorContactos}>
+              <div className={styles.ImagenContacto}>
+                <a href="https://www.linkedin.com/in/angela-garcia-1880a41b8/" target="_blank" rel="noopener noreferrer">
+                  <Image
+                      src= {linkedin}
+                      alt="linkedin"
+                      width={100}
+                      height={100}
+                    />
+                </a>
+              </div>
+              <div className={styles.ImagenContacto}>
+                <a href="https://github.com/angelargd8" target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src= {github}
+                    alt="github"
+                    width={100}
+                    height={100}
+                  />
+                </a>
+              </div>
+              
+            </div>
+
           </div>
           
         </main>
