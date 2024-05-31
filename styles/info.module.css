@@ -1,3 +1,31 @@
+.abs{
+    position: relative;
+    background-color: #000;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.Container{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem;
+    min-height: 70vh;
+    color: #fff;
+    border-radius: 10%;
+    margin-top: 10%;
+    z-index: 2;
+}
+
+.ContainerInfo{
+    margin-left: 10%;
+    z-index: 3;
+}
+
+
 @keyframes blink {
     0% {opacity: 1;}
     50% {opacity: 0.5;}
@@ -13,10 +41,9 @@
 .starsContainer{
     position: absolute;
     top: 0;
-    left: 0;
+    left: -100px;
     right: 0;
     bottom: 0;
-    --size:1px;
     --space-layer: 4vw 50vh 0 #fff,
     8vw 88vh 0 #fff;
     width: var(--size);

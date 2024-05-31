@@ -1,3 +1,4 @@
+
 @keyframes blink {
     0% {opacity: 1;}
     50% {opacity: 0.5;}
@@ -13,8 +14,9 @@
 .starsContainer{
     position: absolute;
     top: 0;
-    left: 0;
-    --size:1px;
+    left: -100px;
+    right: 0;
+    bottom: 0;
     --space-layer: 4vw 50vh 0 #fff,
     8vw 88vh 0 #fff;
     width: var(--size);

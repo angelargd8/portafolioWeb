@@ -69,4 +69,12 @@
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF9UXfrx8TWM7eyKB1jdIk66ZoGVmTtqWjKQ&s') !important;
     animation: rotate 13s  infinite;
   }
+
+
+  @media (max-width: 700px) {
+    .lenguaje {
+        left: 35%;
+      }
+    
+  }
   

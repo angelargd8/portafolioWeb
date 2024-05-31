@@ -22,8 +22,6 @@ export default function SplashScreen() {
           '--size': '3px',
           
         });
-    
-      
       }, [])
     
 

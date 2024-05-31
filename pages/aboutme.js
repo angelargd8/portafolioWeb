@@ -6,9 +6,10 @@ import SplashScreen from "./splashscreen";
 import React, { useEffect, useState } from "react";
 import stylesStars from "../src/app/stars.module.css"
 import imagen1 from "../public/assets/a2.png"
-import angleUp from "../public/assets/up.png"
 import Link from "next/link";
 import stylesLenguajes from "../styles/lenguajes.module.css"
+import Info from "./info"
+import Projects from "./projects"
 
 
 function AboutMe() {
@@ -17,7 +18,7 @@ function AboutMe() {
     useEffect(() => {
         const timer = setTimeout(() => {
           setLoading(false);
-        }, 1000); 
+        }, 100); 
     
         return () => clearTimeout(timer);
       }, []);
@@ -75,7 +76,6 @@ function AboutMe() {
                   />
                   {/*lenguajes*/}   
                 {
-                  /*<div className={`${stylesLenguajes.lenguaje}` }></div>*/
                   Array.from({ length: 9 }).map((_, i) => (
                       <div className={`${stylesLenguajes.lenguaje} ${stylesLenguajes[`lenguaje${i + 1}`]}`}></div>
 
@@ -90,57 +90,127 @@ function AboutMe() {
           </div>
 
           <div className={styles.grid}>
+            
             <a
-              href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+              href="#aboutme"
               className={styles.card}
-              target="_blank"
-              rel="noopener noreferrer"
             >
               <h2>
-                Docs <span>-&gt;</span>
+                About me <span>-&gt;</span>
               </h2>
-              <p>Find in-depth information about Next.js features and API.</p>
+              
             </a>
 
             <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+              href="#projects"
               className={styles.card}
-              target="_blank"
-              rel="noopener noreferrer"
             >
               <h2>
-                Learn <span>-&gt;</span>
+                Projects <span>-&gt;</span>
               </h2>
-              <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
+              
             </a>
 
             <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+              href="#skills"
               className={styles.card}
-              target="_blank"
-              rel="noopener noreferrer"
+
             >
               <h2>
-                Templates <span>-&gt;</span>
+                Skills <span>-&gt;</span>
               </h2>
-              <p>Explore starter templates for Next.js.</p>
+              
             </a>
 
             <a
-              href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+              href="contact"
               className={styles.card}
-              target="_blank"
-              rel="noopener noreferrer"
+
             >
               <h2>
-                Deploy <span>-&gt;</span>
+                Contact <span>-&gt;</span>
               </h2>
-              <p>
-                Instantly deploy your Next.js site to a shareable URL with Vercel.
-              </p>
+              
             </a>
           </div>
+          <div id="#aboutme">
+            <Info/>
+          </div>
+          <div id="#projects">
+          <Projects/>
+          
+          
+          
+            <div className={styles.ContainerInfo}>
+                <div className={styles.grid2}>
+                  <a href="http://uwu-guate.site:3412/" target="_blank" rel="noopener noreferrer">
+                      <button className={styles.card}>
+                          <h2>
+                          CSS Animation 
+                          </h2>
+                          <p>
+                            Laboratorio only css
+                            animated y con solo un div
+                          </p>
+                      </button>
+                  </a>
+                  <a href="http://3.13.174.55/lab3_html/22869/index.html" target="_blank" rel="noopener noreferrer">
+                      <button className={styles.card}>
+                          <h2>
+                          HTML game
+                          </h2>
+                          <p>
+                            juego interactivo en HTML
+                          </p>
+                      </button>
+                  </a>
+                  <a href="http://uwu-guate.site:3412/" target="_blank" rel="noopener noreferrer">
+                      <button className={styles.card}>
+                          <h2>
+                          chat en vivo
+                          </h2>
+                          <p>
+                            chat en vivo con comunicacion
+                            a una api
+                          </p>
+                      </button>
+                  </a>
+                  <a href="https://labb8.vercel.app/" target="_blank" rel="noopener noreferrer">
+                      <button className={styles.card}>
+                          <h2>
+                          calculadora
+                          </h2>
+                          <p>
+                            calculadora con tests
+                            - vitest
+                            - jsdom
+                          </p>
+                      </button>
+                  </a>
+                  <a href="http://uwu-guate.site:3200/" target="_blank" rel="noopener noreferrer">
+                      <button className={styles.card}>
+                          <h2>
+                          blog
+                          </h2>
+                          <p>
+                            proyecto usando vite+react
+                          </p>
+                      </button>
+                  </a>
+                  
+                </div>
+            </div>
+
+          </div>
+          <div id="#skills">
+            <Info/>
+          </div>
+          <div id="#contact">
+            <Info/>
+          </div>
+          
         </main>
+        
         
 
     )
