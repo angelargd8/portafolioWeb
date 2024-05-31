@@ -54,7 +54,7 @@ function AboutMe() {
 
     return(
         
-        //loading ? <SplashScreen /> :
+        loading ? <SplashScreen /> :
          
         <main className={styles.main}>
         <div className={stylesStars.starsContainer} style= {starsStyle}></div>
@@ -275,6 +275,7 @@ function AboutMe() {
               </div>
               
             </div>
+            <div className={styles.espacio}></div>
 
           </div>
           

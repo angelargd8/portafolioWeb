@@ -49,6 +49,26 @@
     width: var(--max-width);
     background-color: rgba(128, 0, 128, 0.062);
 }
+@media (max-width: 701px) {
+    .grid {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        grid-template-columns: repeat(1, 50%);
+        
+    }
+    
+  }
+
+  @media (max-width: 500px)  {
+    .grid {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        grid-template-columns: repeat(1, 50%);
+    }
+    
+  }
   
   .card {
     padding: 1rem 1.2rem;
