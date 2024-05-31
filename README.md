@@ -1,8 +1,13 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portafolio
+Este proyecto es mi portafolio, en donde se pueden encontrar algunos de mis programas realizados, que tecnologías he usado, acerca de mi y mi contacto. 
 
-## Getting Started
+[Link al portafolio](https://portafolio-web-two-amber.vercel.app/)
 
-First, run the development server:
+Proyecto hecho en [Next.js](https://nextjs.org/) proyecto bootstrapped con [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## Gomo correr el proyecto localmente:
+
+Primero hacer un git clone del proyecto, luego instalar las dependencias y correr el server:
 
 ```bash
 npm run dev
@@ -14,23 +19,24 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abrir [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# Tecnologías: 
 
-## Learn More
+## Javascript:
+JavaScript es un lenguaje de programación que se utiliza principalmente para agregar funcionalidad interactiva a las páginas web. Los aspectos más relevantes que tiene este lenguaje es que es interactivo, esta en el server client, esta orientado en objetos y es dinamico.
 
-To learn more about Next.js, take a look at the following resources:
+## CSS:
+Es un lenguaje de hoja de estilos utilizado para describir la presentación de un documento escrito en HTML. CSS, significa Cascading Style Sheets.
+## Next.js:
+Es un Framework de JavaScript que permite hacer aplicaciones web usando react.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## React: 
+Es una biblioteca de JavaScript que es desarrollada por facebook para construir interfaces de usuario. Este esta bsado en componentes, tiene una sintaxis jsx, implementa el virtual DOM y es bastante interactivo.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+# Deploy: 
+## Versel:
+Vercel es una compañía proveedora de software y mantinen el desarrollo de Next.js
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
