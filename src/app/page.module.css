@@ -238,7 +238,10 @@
 
 /* Mobile */
 @media (max-width: 700px) {
-
+  .botonFlecha{
+    top: 100%;
+    left: 47%;
+  }
   .orbita{
     position: fixed ;
     justify-content: center;
