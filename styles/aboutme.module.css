@@ -35,7 +35,7 @@
 }
 
 .ImagenContacto:hover{
-    box-shadow: 0 0 20px 0 rgba(12, 15, 187, 0.788);
+    box-shadow: 0 0 60px 0 rgba(12, 15, 187, 0.788);
 }
 
 
@@ -145,8 +145,8 @@
   }
   .grid2 {
     display: grid;
-    margin-top: -15%;
-    grid-template-columns: repeat(3, minmax(33%, auto));
+    margin-top: -17%;
+    grid-template-columns: repeat(3, minmax(37%, auto));
     max-width: 100%;
     width: var(--max-width);
     background-color: rgba(128, 0, 128, 0.062);

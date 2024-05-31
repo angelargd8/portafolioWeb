@@ -14,6 +14,13 @@ import Skills from "./skills"
 import Contact from "./contact"
 import linkedin from "../public/assets/linkedin.png"
 import github from "../public/assets/github.png"
+import img1 from "../public/assets/1.png"
+import img2 from "../public/assets/2.png"
+import img3 from "../public/assets/3.png"
+import img4 from "../public/assets/4.png"
+import img5 from "../public/assets/5.png"
+
+
 
 
 
@@ -147,17 +154,7 @@ function AboutMe() {
           
             <div className={styles.ContainerInfo}>
                 <div className={styles.grid2}>
-                  <a href="http://uwu-guate.site:3412/" target="_blank" rel="noopener noreferrer">
-                      <button className={styles.card}>
-                          <h2>
-                          CSS Animation 
-                          </h2>
-                          <p>
-                            Laboratorio only css
-                            animated y con solo un div
-                          </p>
-                      </button>
-                  </a>
+                  
                   <a href="http://3.13.174.55/lab3_html/22869/index.html" target="_blank" rel="noopener noreferrer">
                       <button className={styles.card}>
                           <h2>
@@ -166,6 +163,12 @@ function AboutMe() {
                           <p>
                             juego interactivo en HTML
                           </p>
+                          <Image
+                            src= {img2}
+                            alt="img"
+                            width={200}
+                            height={100}
+                          />
                       </button>
                   </a>
                   
@@ -179,17 +182,12 @@ function AboutMe() {
                             - vitest
                             - jsdom
                           </p>
-                      </button>
-                  </a>
-                  <a href="http://uwu-guate.site:3412/" target="_blank" rel="noopener noreferrer">
-                      <button className={styles.card}>
-                          <h2>
-                          chat en vivo
-                          </h2>
-                          <p>
-                            chat en vivo con comunicacion
-                            a una api
-                          </p>
+                          <Image
+                            src= {img3}
+                            alt="img"
+                            width={200}
+                            height={100}
+                          />
                       </button>
                   </a>
                   <a href="http://uwu-guate.site:3200/" target="_blank" rel="noopener noreferrer">
@@ -200,8 +198,50 @@ function AboutMe() {
                           <p>
                             proyecto usando vite+react
                           </p>
+                          <Image
+                            src= {img4}
+                            alt="img"
+                            width={200}
+                            height={100}
+                          />
                       </button>
                   </a>
+                  <a href="http://uwu-guate.site:3512/" target="_blank" rel="noopener noreferrer">
+                      <button className={styles.card}>
+                          <h2>
+                          chat en vivo
+                          </h2>
+                          <p>
+                            chat en vivo con comunicacion
+                            a una api
+                          </p>
+                          <Image
+                            src= {img5}
+                            alt="css animation"
+                            width={200}
+                            height={100}
+                          />
+                      </button>
+                  </a>
+                  
+                  <a href="http://uwu-guate.site:3412/" target="_blank" rel="noopener noreferrer">
+                      <button className={styles.card}>
+                          <h2>
+                          CSS Animation 
+                          </h2>
+                          <p>
+                            Laboratorio only css
+                            animated y con solo un div
+                          </p>
+                          <Image
+                            src= {img1}
+                            alt="css animation"
+                            width={200}
+                            height={100}
+                          />
+                      </button>
+                  </a>
+                  
                   
                 </div>
             </div>

@@ -8,7 +8,7 @@ function Skills(){
     const [starsStyle, setStarsStyle] = useState({});
     useEffect(() => {
         const layer = [];
-        const totalStars = 300;
+        const totalStars = 400;
         for(let i = 0; i < totalStars; i++) {
           const x = Math.floor(Math.random() * 100);
           const y = Math.floor(Math.random() * 100);
